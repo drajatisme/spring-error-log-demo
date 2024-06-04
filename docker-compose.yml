@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  java-dev:
+    tty: true
+    build: 
+      context: ./
+      dockerfile: ./dockerfile
+    # restart: always
+    ports:
+      - "8080:8080"
+    deploy:
+      mode: replicated
+      replicas: 1
+    volumes:
+      - ./:/workspaces/
