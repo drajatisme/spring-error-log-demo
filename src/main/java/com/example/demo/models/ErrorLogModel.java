@@ -14,7 +14,19 @@ public class ErrorLogModel {
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "request_data")
-    private String requestData;
+    @Column(name = "url")
+    private String url;
+
+    @Column(name = "path")
+    private String path;
+
+    @Column(name = "payload")
+    private String payload;
+
+    @Column(name = "message")
+    private String message;
+
+    @Column(name = "stacktrace", columnDefinition="text")
+    private String stacktrace;
 
 }
