@@ -1,8 +1,9 @@
-package com.example.demo;
+package com.example.demo.services;
 
 import org.springframework.stereotype.Service;
 
 import com.example.demo.exceptions.ValidationException;
+import com.example.demo.repositories.DemoRepository;
 
 import lombok.RequiredArgsConstructor;
 
